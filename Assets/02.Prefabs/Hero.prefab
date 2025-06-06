@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 887258690, guid: 1deb08f5f4e51c144ad7f796de4df4ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 8, y: 8}
@@ -119,6 +119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3308967934836128108}
+  - component: {fileID: 5160802431799732155}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -143,6 +144,23 @@ Transform:
   - {fileID: 4463639868583502714}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5160802431799732155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755215619026887463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9412fbcfcf8734095d2bb8b699e4f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attack_Range: 1
+  target: {fileID: 0}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &5010809231388081357
 GameObject:
   m_ObjectHideFlags: 0

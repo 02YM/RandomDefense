@@ -11,9 +11,20 @@ public class Character : MonoBehaviour
         renderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+
+    protected void AnimatorChange(string temp, bool Trigger)
+    {
+        if(Trigger)
+        {
+            animator.SetTrigger(temp);
+        }
+        else
+        {
+            animator.SetBool(temp, true);
+        }
     }
 }
